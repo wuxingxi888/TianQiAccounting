@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--使用ListView的listSelector属性时用的selector选择器的代码：-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/itemcolor" android:state_pressed="true"/>
+</selector>

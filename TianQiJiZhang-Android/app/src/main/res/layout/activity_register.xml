@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_user_register"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeb3b"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.register.register">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/zhuce_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <Button
+            android:layout_marginLeft="19dp"
+            android:id="@+id/zhucefanhui_button"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:background="@drawable/zhuce_03"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:background="@drawable/zhuce_06"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/register_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/text_view_border"
+            android:hint="@string/prompt_email"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:maxLength="20"/>
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/text_view_border"
+            android:hint="@string/prompt_password"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/register_password1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/text_view_border"
+            android:hint="@string/prompt_password"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/text_view_border"
+            android:hint="@string/prompt_Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="20"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_marginTop="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_view_border"
+            android:text="@string/zhuceButton"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

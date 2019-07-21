@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_item_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addDetails.addDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/itemDetalils_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#ffeb3b"
+        android:weightSum="1">
+
+
+        <Button
+            android:layout_marginLeft="19dp"
+            android:id="@+id/itemDetailsFanhui_button"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:background="@drawable/zhuce_03"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:id="@+id/itemDetails_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:layout_marginTop="35dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/zhichu_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="支出"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/shouru1"/>
+
+        <Button
+            android:id="@+id/shouru_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收入"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/shouru2"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/item_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="33dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/itemDetails_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+    </FrameLayout>
+
+</LinearLayout>
